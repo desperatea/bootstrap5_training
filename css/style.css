@@ -69,13 +69,36 @@ background-size: contain;
   height: 100%; 
 }
 
+.color1{
+  color: var(--color1);
+}
+.color2{
+ color: var(--color2);
+}
 
-
-
-
-
-
-
+.about{
+  background-color: #eee;
+}
+.about i{
+font-size: 15px;
+color: var(--color2);
+}
+.itd_circle{
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+  width: 120px;
+  height: 3px;
+  margin: 15px auto;
+  background-color: var(--color1);
+}
 /*
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .menu-main {
