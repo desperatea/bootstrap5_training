@@ -9,11 +9,15 @@ header, footer, section{
 header{
   padding: 200px 0;
 }
-header, footer{
-background: url(../img/pattern.png), var(--color1);
-background: url(../img/pattern.png), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);/* Chrome 10-25, Safari 5.1-6 */
-background: url(../img/pattern.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-background-size: contain;                                             
+header{
+background: url(../img/2.jpg) , var(--color1), 50% 50% no-repeat fixed;
+background: url(../img/2.jpg), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);/* Chrome 10-25, Safari 5.1-6 */
+background: url(../img/2.jpg), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-position: 0px -100px;                                             
 }
 
 .itd_play{
@@ -53,8 +57,18 @@ background-size: contain;
   color: var(--bs-white);
   background-color: var(--color1);
 }
-
-
+.btn-itd_form{
+  display: block;
+ 
+  margin: 0 auto;
+  padding: 8px 30px;
+  color: var(--bs-white);
+  background-color: var(--color2);
+}
+.btn-itd_form:hover{
+  color: var(--bs-white);
+  background-color: var(--color1);
+}
 .embed-container { 
   position: relative;
   padding-bottom: 56.25%;
@@ -77,7 +91,7 @@ background-size: contain;
 }
 
 .about{
-  background-color: #eee;
+  background-color: #0dcaf04f;
 }
 .about i{
 font-size: 15px;
@@ -98,6 +112,18 @@ color: var(--color2);
   height: 3px;
   margin: 15px auto;
   background-color: var(--color1);
+}
+
+/* Для кого */
+.forwhom h5{
+  padding: 50px;
+  border: 3px solid var(--color1);
+}
+.forma_sv{
+  background-color: #0dcaf04f;
+}
+#footer{
+  background-color: var(--color2);
 }
 /*
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
